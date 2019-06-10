@@ -1,0 +1,13 @@
+<h1>Welcome to count!</h1>
+There are {{count}} words in the paragraph.
+<h2>Your paragraph is:</h2>
+{{words}}
+
+<h2>Words and their count: </h2>
+
+{% for word , repeat in sortedwords %}
+{{word}} -  {{repeat}}
+<br>
+{% endfor %}
+<br>
+<a href="{% url 'home' %}">Go back</a>
